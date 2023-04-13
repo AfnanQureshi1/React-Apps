@@ -1,20 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
 
-
-
-function App() {
+function Profile() {
   return (
-    <>
-    {/*shortcut emmets*/}
-      <div className="blank"></div>{/*div.blank*/}
-      <li className="name">hi</li>{/*#li.name*/}
-      <ul className="list"></ul> {/*il.list*/}
-      <div className="content"></div> {/*.content*/}
-      <div id="content-id"></div> {/*#content-id*/}
-    </>
-    
+    <img
+      src="https://i.imgur.com/MK3eW3As.jpg"
+      alt="Katherine Johnson"
+    />
   );
 }
 
-export default App;
+export default function App() {
+  return (
+    <section>
+      <h1>Amazing scientists</h1>
+      <Profile />
+      <Profile />
+      <Profile />
+    </section>
+  );
+}
+
+
+// export default App;
