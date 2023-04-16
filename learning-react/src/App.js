@@ -1,4 +1,5 @@
 import './App.css';
+import PackingList from './components/ConditionalRendering';
 
 function Profile() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
       <Profile />
       <Profile />
       <Profile />
+      <PackingList/>
     </section>
   );
 }
