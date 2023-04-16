@@ -35,3 +35,37 @@ export default function PackingList() {
         </section>
     );
 }
+function Items({ names, importance }) {
+    return (
+      <li className="item">
+      {names}
+      {importance > 0 && " "}
+      {importance > 0 &&
+        <i> (Importance: {importance}) </i>
+        }
+      </li>
+    );
+  }
+  
+  export function PackingsList() {
+    return (
+      <section>
+        <h1>Sally Ride's Packing List</h1>
+        <ul>
+          <Items 
+            importance={9} 
+            names="Space suit" 
+          />
+          <Items 
+           
+            names="Helmet with a golden leaf" 
+          />
+          <Items 
+            importance={6} 
+            names="Photo of Tam" 
+          />
+        </ul>
+      </section>
+    );
+  }
+  

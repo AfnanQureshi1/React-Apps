@@ -1,5 +1,6 @@
 import './App.css';
 import PackingList from './components/ConditionalRendering';
+import {PackingsList} from './components/ConditionalRendering';
 
 function Profile() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
       <Profile />
       <Profile />
       <PackingList/>
+      <PackingsList/>
     </section>
   );
 }
